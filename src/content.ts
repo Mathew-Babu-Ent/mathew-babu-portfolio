@@ -111,8 +111,8 @@ export const skillGroups = [
 ];
 
 export const education = {
-  degree: 'BTech in Computer Science and Engineering',
-  institution: 'Institution name',
+  degree: 'B.Tech in Computer Science and Engineering',
+  institution: 'Viswajyothi College of Engineering and Technology (VJCET), Vazhakulam, Muvatupuzha, Kerala, India',
   dates: 'Dates',
-  detail: 'Add qualification details',
+  detail: 'Graduated in Computer Science and Engineering.',
 };
