@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion, useInView, useReducedMotion, useScroll, useTransform } from 'framer-motion';
-import { ArrowDown, ArrowDownRight, ArrowUpRight, ArrowUp, Download, Menu, X } from 'lucide-react';
+import { ArrowDown, ArrowDownRight, ArrowUpRight, ArrowUp, Menu, X } from 'lucide-react';
 import { brandEmblem, education, profile, projects, skillGroups } from './content';
 import BusinessPulseCaseStudy from './BusinessPulseCaseStudy';
 import SalesAnalyticsCaseStudy from './SalesAnalyticsCaseStudy';
@@ -94,11 +94,11 @@ function Hero() {
       <h1 className="hero-name"><span className="hero-line-window"><motion.span className="hero-line" {...lineMotion(0)}>MATHEW</motion.span></span><span className="hero-line-window"><motion.span className="hero-line" {...lineMotion(.3)}>BABU<span className="name-period">.</span></motion.span></span></h1>
       <div className="hero-bottom">
         <motion.p initial={reduced ? false : { opacity: 0, y: 9 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: reduced ? 0 : 2.18, duration: reduced ? 0 : .65, ease: [.16, 1, .3, 1] }}>Computer Science graduate drawn to thoughtful software, useful data, and ideas made tangible.</motion.p>
-        <div className="hero-actions"><motion.a className="button button-light" href="#work" initial={reduced ? false : { opacity: 0, y: 9 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: reduced ? 0 : 2.47, duration: reduced ? 0 : .55, ease: [.16, 1, .3, 1] }}>Explore my work <ArrowDownRight size={16}/></motion.a><motion.a className="text-link" href="#about" initial={reduced ? false : { opacity: 0, y: 9 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: reduced ? 0 : 2.58, duration: reduced ? 0 : .55, ease: [.16, 1, .3, 1] }}>About me <ArrowDownRight size={15}/></motion.a><motion.a className="text-link cv-link" href="/Mathew-Babu-CV.pdf" download initial={reduced ? false : { opacity: 0, y: 9 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: reduced ? 0 : 2.7, duration: reduced ? 0 : .55, ease: [.16, 1, .3, 1] }}>Download CV <Download size={15}/></motion.a></div>
+        <div className="hero-actions"><motion.a className="button button-light" href="#work" initial={reduced ? false : { opacity: 0, y: 9 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: reduced ? 0 : 2.47, duration: reduced ? 0 : .55, ease: [.16, 1, .3, 1] }}>Explore my work <ArrowDownRight size={16}/></motion.a><motion.a className="text-link" href="#about" initial={reduced ? false : { opacity: 0, y: 9 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: reduced ? 0 : 2.58, duration: reduced ? 0 : .55, ease: [.16, 1, .3, 1] }}>About me <ArrowDownRight size={15}/></motion.a></div>
       </div>
+      <motion.a className="scroll-cue" href="#about" initial={reduced ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: reduced ? 0 : 2.72, duration: reduced ? 0 : .32, ease: [.16, 1, .3, 1] }}><span>SCROLL TO DISCOVER</span><motion.i animate={reduced ? {} : { y: [0, 7, 0] }} transition={{ repeat: Infinity, duration: 1.7, ease: 'easeInOut' }}><ArrowDown size={14}/></motion.i></motion.a>
     </div>
     <div className="hero-side-note">INDEPENDENT THINKING<br/>BUILT WITH INTENTION</div>
-    <motion.a className="scroll-cue" href="#about" initial={reduced ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: reduced ? 0 : 2.72, duration: reduced ? 0 : .32, ease: [.16, 1, .3, 1] }}><span>SCROLL TO DISCOVER</span><motion.i animate={reduced ? {} : { y: [0, 7, 0] }} transition={{ repeat: Infinity, duration: 1.7, ease: 'easeInOut' }}><ArrowDown size={14}/></motion.i></motion.a>
     <span className="hero-count">01 <i/> 05</span>
   </section>;
 }
